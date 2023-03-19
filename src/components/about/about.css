@@ -1,0 +1,11 @@
+.content__container{
+    display: flex;
+    padding: 1.2rem;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 10rem;
+}
+.text{
+    padding: 4rem;
+    
+}

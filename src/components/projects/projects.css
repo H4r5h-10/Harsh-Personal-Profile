@@ -1,0 +1,47 @@
+.card-container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+}
+.card
+{
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    border: 1px solid transparent;
+    margin: 0 auto;
+    width: 20rem;
+    transition:var(--transition);
+}
+.card:hover{
+    background: var(--color-bg);
+    transition:var(--transition);
+    border-color: var(--color-primary);
+}
+.card-item-image{
+    border-radius: 1.2rem;
+    overflow: hidden;
+    height: 40vh;
+}
+.btn{
+    margin: 1rem 0.7rem;
+}
+.pro-para{
+    margin: 1rem 0;
+}
+
+/*========================= RESPONSIVE ==========================*/
+@media screen and (max-width: 1024px)
+{
+    .card-container{
+        gap: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+    }
+}
