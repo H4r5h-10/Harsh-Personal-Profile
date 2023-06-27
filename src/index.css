@@ -46,6 +46,7 @@ html{
 body{
     font-family: 'Oswald', sans-serif;
     background: var(--color-bg);
+    /* background: linear-gradient(to left, black,rgb(29, 28, 28)); */
     color: var(--color-white);
     line-height: 1.6;
     background-image: url('../src/assets/bgnew2.png');

@@ -10,7 +10,9 @@
     margin: auto;
 }
 .inner{
-    background: rgba(0,0,0,0.3);
+    /* background: rgba(255,255,255, 0.8); */
+    /* color: black; */
+    background: var(--color-bg);
     padding: 1.2rem;
     border-radius: 2.2rem;
     backdrop-filter: blur(10px);
@@ -21,23 +23,26 @@
     gap: 0.5rem;
 }
 .inner:hover{
-    background: rgba(8, 8, 8, 0.3);
+    box-shadow: 0px 2px 13px 0px var(--color-primary);
+    /* background: rgba(8, 8, 8, 0.3); */
     transition: var(--transition);
+    color: white;
 }
 .bar
 {
     background: #353b48;
     display: block;
     height: 20px;
-    border: 1px solid rgba(0,0,0,0.3);
+    border: 1px solid transparent;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25, .8, .25,1);
+    transition: 0.3s ease ;
 }
 .bar:hover
 {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 10px var(--color-light), 0 10px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
 }
 
 .bar span{
@@ -61,8 +66,8 @@
     width: 70%;
     animation: react 2s;
 }
-.MongoDB{
-    width: 80%;
+.NextJs{
+    width: 40%;
     animation: mongo 2s;
 }
 .C{
@@ -77,86 +82,7 @@
     width: 75%;
     animation: algos 2s;
 }
-@keyframes HTML{
-    0%
-    {
-        width: 0;
-    }
-    70%
-    {
-        width: 70%;
-    }
-}
-@keyframes css{
-    0%
-    {
-        width: 0;
-    }
-    60%
-    {
-        width: 60%;
-    }
-}
-@keyframes javascript{
-    0%
-    {
-        width: 0;
-    }
-    40%
-    {
-        width: 40%;
-    }
-}
-@keyframes react{
-    0%
-    {
-        width: 0;
-    }
-    70%
-    {
-        width: 70%;
-    }
-}
-@keyframes mongo{
-    0%
-    {
-        width: 0;
-    }
-    80%
-    {
-        width: 80%;
-    }
-}
-@keyframes node{
-    0%
-    {
-        width: 0;
-    }
-    40%
-    {
-        width: 40%;
-    }
-}
-@keyframes c{
-    0%
-    {
-        width: 0;
-    }
-    70%
-    {
-        width: 70%;
-    }
-}
-@keyframes algos{
-    0%
-    {
-        width: 0;
-    }
-    75%
-    {
-        width: 75%;
-    }
-}
+
 
 /*======================================== DEVICE SIZES ============================================*/
 

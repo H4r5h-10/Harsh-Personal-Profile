@@ -8,16 +8,17 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 const App = () => {
+
   return (
-    <>
-      <Navbar/>
-      <Header/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
-    </>
+      <div>
+        <Navbar/>
+        <Header/>
+        <About/>
+        <Skills/>
+        <Projects/>
+        <Contact/>
+        <Footer/>
+      </div>
   )
 }
 

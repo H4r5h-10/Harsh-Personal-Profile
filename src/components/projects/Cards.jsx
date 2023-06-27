@@ -4,12 +4,12 @@ const Cards = (props) => {
   return (
     <div className="card">
         <div className='card-item-image'>
-            <img src={props.url} alt="" />
+            <img src={props.url} alt="" height="200px" width="100px"/>
         </div>
-        <p className='pro-para'>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p className='pro-para'>{props.desc}</p>
         <div className="pro-buttons">
-            <a href="/" className='btn' target="_blank" rel="noreferrer">Github<IoLogoGithub/></a>
-            <a href="#contact" className='btn btn-primary'>Open Page</a>
+            <a href={props.github} className='btn' target="_blank" rel="noreferrer">Github<IoLogoGithub/></a>
+            <a href={props.link} className='btn btn-primary' target="_blank" rel="noreferrer">Open Page</a>
         </div>
         
       </div>
