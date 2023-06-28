@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 const Bar = (props) => {
   return (
       <li className='list'>
-        <h3>{props.skill=='C'?"C++":props.skill}</h3>
+        <h3>{props.skill==='C'?"C++":props.skill}</h3>
         <span className="bar"
               
         >
