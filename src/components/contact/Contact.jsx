@@ -5,6 +5,9 @@ import {ImLinkedin} from 'react-icons/im'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import {motion} from 'framer-motion'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// import { Toast } from 'react-toastify/dist/components';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -12,11 +15,18 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const form = useRef();
+  const showToastMessage = () => {
+    toast.success('Mail Sent Successfully!', {
+        position: toast.POSITION.TOP_RIGHT,
+        theme: 'dark'
+    });
+};
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_n7vxb0o', 'template_qp2rend', form.current, 'okYMoTI1x1lJsOnus');
+    showToastMessage();
     setEmail("");
     setName("");
     setMessage("");
@@ -30,6 +40,9 @@ const Contact = () => {
     transition={{duration: 0.5,delay: 0.2}}
     viewport={{once:true}}
     >
+      <ToastContainer
+        autoClose={1000}
+      />
       <h5>Get in Touch</h5>
       <h2>Contact Me</h2>
 
@@ -52,8 +65,6 @@ const Contact = () => {
 
         <form ref= {form} onSubmit={sendEmail} id="formid">
           <input type="text" name= "name" placeholder="Your Name" onChange={event => setName(event.target.value)} value={name}/>
-          {/* <input type="text" name= "name" placeholder="Your Name" onFocus={(e) => e.target.placeholder = ""} 
-  onBlur={(e) => e.target.placeholder = "Your Name"}/> */}
 
 
           <input type="text" name='email' placeholder="Your Email" onChange={event => setEmail(event.target.value)} value={email}/>
