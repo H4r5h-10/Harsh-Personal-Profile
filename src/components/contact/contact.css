@@ -39,7 +39,10 @@ input, textarea{
     color: white;
     font-size: large;
 }
-
+.submit
+{
+    text-align: center;
+}
 
 /*==================================== RESOLUTION ================================*/
 @media screen and (max-width: 1024px)

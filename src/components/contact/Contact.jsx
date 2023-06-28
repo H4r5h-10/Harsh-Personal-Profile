@@ -32,7 +32,6 @@ const Contact = () => {
     setMessage("");
   };
 
-
   return (
     <motion.section id='contact'
     initial={{opacity: 0, y: 75}}
@@ -73,9 +72,8 @@ const Contact = () => {
           <textarea name="message" placeholder="Leave your message here..." onChange={event => setMessage(event.target.value)} value={message}></textarea>
 
   
-          <div>
-          <button className='btn btn-primary' type='submit' value='send' onClick={form.reset}><h3>Submit</h3></button>
-          <button className='btn btn-primary' type='reset'><h3>Reset</h3></button>
+          <div className='submit'>
+          <button className='btn btn-primary' type='submit' value='send'><h3>Submit</h3></button>
           </div>
         </form>
       </div>
