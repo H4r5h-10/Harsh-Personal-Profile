@@ -24,7 +24,7 @@ const Skills = () => {
           <Bar skill='ReactJs'/>
         </div>
         <div className='inner'>
-          <Bar skill='NodeJs'/>
+          <Bar skill='TypeScript'/>
           <Bar skill='NextJs'/>
           <Bar skill='C'/>
           <Bar skill='Algorithms'/>
